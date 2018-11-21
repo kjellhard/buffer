@@ -1,4 +1,5 @@
-#pragma once
+#ifndef INT_SORTED_H
+#define INT_SORTED_H
 #include "int_buffer.h"
 
 class int_sorted
@@ -11,9 +12,9 @@ public:
 	const int* end() const;
 	int_sorted merge(const int_sorted& merge_with) const;
 	int_sorted sort(const  int* begin, const int* end);
-	int_sorted sel_sort(const int * begin, const int * end);
+	//int_sorted sel_sort(const int * begin, const int * end);
 	~int_sorted();
 private:
 	int_buffer buff;
 };
-
+#endif

@@ -40,11 +40,9 @@ int* int_sorted::insert(int value)
 		else
 			*j = *i;
 	}
-
 	if (!r) //Om index ej hittats
 	{
 		--j;
-		//Så vet vi att den ska in längst bak
 		r = j;
 		*r = value;
 	}
